@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckBoxActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="과일"
+        android:textSize="20dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgFruit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rdWatermelon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="수박"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/rdBanana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="바나나"
+            android:textSize="20dp"/>
+
+        <RadioButton
+            android:id="@+id/rdStrawberry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="딸기"
+            android:textSize="20dp"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택된 과일 : "
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvRadioResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/cbYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="예"
+            android:textSize="20dp"/>
+
+        <CheckBox
+            android:id="@+id/cbNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아니오"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택하세요"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvCbResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

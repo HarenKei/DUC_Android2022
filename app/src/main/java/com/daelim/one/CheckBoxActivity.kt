@@ -17,8 +17,6 @@ class CheckBoxActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-
-
         binding.rgFruit.setOnCheckedChangeListener{group, checkedId ->
             when(checkedId){
                 R.id.rdWatermelon -> binding.tvRadioResult.text = "수박"

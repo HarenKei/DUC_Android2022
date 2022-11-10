@@ -28,20 +28,20 @@ class CheckBoxActivity : AppCompatActivity() {
         binding.cbYes.setOnCheckedChangeListener{cbBox, isChecked ->
             if(isChecked) {
                 cbResultList.add("예")
-                binding.tvCbResult.text = cbResultList.toString()
+                binding.tvCbResult.text = cbResultList.toString().replace("[", "").replace("]","")
 
             } else{
                 cbResultList.remove("예")
-                binding.tvCbResult.text = cbResultList.toString()
+                binding.tvCbResult.text = cbResultList.toString().replace("[", "").replace("]","")
             }
         }
         binding.cbNo.setOnCheckedChangeListener{cbBox, isChecked ->
             if(isChecked){
                 cbResultList.add("아니오")
-                binding.tvCbResult.text = cbResultList.toString()
+                binding.tvCbResult.text = cbResultList.toString().replace("[", "").replace("]","")
             } else {
                 cbResultList.remove("아니오")
-                binding.tvCbResult.text = cbResultList.toString()
+                binding.tvCbResult.text = cbResultList.toString().replace("[", "").replace("]","")
             }
         }
     }

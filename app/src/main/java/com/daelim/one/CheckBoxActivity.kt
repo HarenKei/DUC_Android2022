@@ -18,6 +18,8 @@ class CheckBoxActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.rgFruit.setOnCheckedChangeListener{group, checkedId ->
+            //매개변수 group은 rgFruit를 가리킨다.
+            //checkedId의 type은 id(string)
             when(checkedId){
                 R.id.rdWatermelon -> binding.tvRadioResult.text = "수박"
                 R.id.rdBanana -> binding.tvRadioResult.text = "바나나"
@@ -26,6 +28,8 @@ class CheckBoxActivity : AppCompatActivity() {
         }
 
         binding.cbYes.setOnCheckedChangeListener{cbBox, isChecked ->
+            //매개변수 cbBox는 cbYes를 가르킨다.
+            //isChecked의 type은 boolean.
             if(isChecked) {
                 cbResultList.add("예")
                 binding.tvCbResult.text = cbResultList.toString().replace("[", "").replace("]","")
@@ -36,6 +40,7 @@ class CheckBoxActivity : AppCompatActivity() {
             }
         }
         binding.cbNo.setOnCheckedChangeListener{cbBox, isChecked ->
+            //
             if(isChecked){
                 cbResultList.add("아니오")
                 binding.tvCbResult.text = cbResultList.toString().replace("[", "").replace("]","")

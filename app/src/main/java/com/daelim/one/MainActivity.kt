@@ -15,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, ReportNameActivity::class.java)
         val testIntent = Intent(this, TestActivity::class.java)
         val ckboxIntent = Intent(this, CheckBoxActivity::class.java)
+        val ListViewIntent = Intent(this, )
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
@@ -39,6 +40,12 @@ class MainActivity : AppCompatActivity() {
         })
 
         binding.btTest3.setOnClickListener(object : View.OnClickListener{
+            override fun onClick(p0: View?) {
+                startActivity(ckboxIntent)
+            }
+        })
+
+        binding.btListView.setOnClickListener(object : View.OnClickListener{
             override fun onClick(p0: View?) {
                 startActivity(ckboxIntent)
             }

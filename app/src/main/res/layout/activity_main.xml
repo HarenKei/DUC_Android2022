@@ -70,5 +70,12 @@
         android:layout_gravity="center"
         android:text="Custom listview"/>
 
+    <Button
+        android:id="@+id/btCustomList2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Custom listview 2"/>
+
 
 </LinearLayout>

@@ -30,6 +30,8 @@ class CustomListViewActivity : AppCompatActivity() {
         dataList.add(movieData(R.drawable.topgun, "탑건:매버릭", "톰 크루즈"))
         dataList.add(movieData(R.drawable.todaytomorrow, "나는 오늘 어제의 너와 만난다", "고마츠 나나"))
 
+
+
         binding.lvMovieList.adapter = MyAdapter(this, dataList)
     }
 }

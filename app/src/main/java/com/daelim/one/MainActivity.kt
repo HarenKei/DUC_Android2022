@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val ckboxIntent = Intent(this, CheckBoxActivity::class.java)
         val listViewIntent = Intent(this, ListActivity::class.java)
         val customListViewIntent = Intent(this, CustomListViewActivity::class.java)
+        val customListView2Intent = Intent(this, ListView2Activity::class.java)
 
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -56,6 +57,12 @@ class MainActivity : AppCompatActivity() {
         binding.btCustomList.setOnClickListener(object : View.OnClickListener{
             override fun onClick(p0: View?) {
                 startActivity(customListViewIntent)
+            }
+        })
+
+        binding.btCustomList2.setOnClickListener(object :View.OnClickListener{
+            override fun onClick(p0: View?) {
+                startActivity(customListView2Intent)
             }
         })
     }

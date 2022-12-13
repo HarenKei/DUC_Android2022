@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val listViewIntent = Intent(this, ListActivity::class.java)
         val customListViewIntent = Intent(this, CustomListViewActivity::class.java)
         val customListView2Intent = Intent(this, ListView2Activity::class.java)
+        val recyclerViewIntent = Intent(this, RecyclerViewActivity::class.java)
 
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
@@ -63,6 +64,12 @@ class MainActivity : AppCompatActivity() {
         binding.btCustomList2.setOnClickListener(object :View.OnClickListener{
             override fun onClick(p0: View?) {
                 startActivity(customListView2Intent)
+            }
+        })
+
+        binding.btRecyclerView.setOnClickListener(object :View.OnClickListener{
+            override fun onClick(p0: View?) {
+                startActivity(recyclerViewIntent)
             }
         })
     }

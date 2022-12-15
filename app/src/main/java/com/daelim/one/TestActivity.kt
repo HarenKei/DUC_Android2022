@@ -21,14 +21,28 @@ class TestActivity : AppCompatActivity() {
         }
     }
 
+    private var result2 = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){
+        result2 -> when(result2.resultCode){
+            1 -> { binding.tvTerms.text = "YEAH"}
+            2 -> { binding.tvTerms.text = "슬프노..."}
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
             val termsIntent = Intent(this, TermsActivity::class.java)
+            val terms2Intent = Intent(this, Temrs2Activity::class.java)
             super.onCreate(savedInstanceState)
             setContentView(binding.root)
 
             binding.btTerms.setOnClickListener(object : View.OnClickListener {
                 override fun onClick(p0: View?) {
                     result.launch(termsIntent)
+                }
+            })
+
+            binding.btTerms1.setOnClickListener(object : View.OnClickListener{
+                override fun onClick(p0: View?) {
+                    result2.launch(terms2Intent)
                 }
             })
     }

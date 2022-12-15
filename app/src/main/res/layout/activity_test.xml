@@ -22,4 +22,11 @@
         android:layout_height="wrap_content"
         android:text="약관 동의 여부 나올 곳"/>
 
+    <Button
+        android:id="@+id/btTerms1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TERMS 보기2"
+        android:layout_gravity="center"/>
+
 </LinearLayout>
